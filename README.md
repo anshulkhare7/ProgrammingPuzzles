@@ -15,6 +15,7 @@ Programming puzzles and interview coding problems.
 - [Cyclic Sort](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/CyclicSort)
 - [Response Timeout](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/ResponseTimeout)
 - [Matrix Manipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/MatrixManipulation)
+- [Intervals](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/Intervals)
 
 # License
 
