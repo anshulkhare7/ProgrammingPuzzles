@@ -2,7 +2,7 @@
 
 There's an alien language which contains the same characters as the English language, i.e. from **a** to **z**. However, we don’t know the ordering of the characters in this language. You're given a dictionary from this language i.e, a sequence of words which are lexicographically sorted. 
 
-Find the correct order of characters in the alien language.
+#### Find the correct order of characters in the alien language.
 
 ## Example 1: 
 
