@@ -6,7 +6,7 @@ Consider the graph below.
 
 ![alt Graph](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Directed_acyclic_graph_2.svg/180px-Directed_acyclic_graph_2.svg.png)
 
-The edges of the graph are: `[5,11] [11,2] [7.11] [7,8] [8,9] [3,8] [3,10] [11,9] [11,10]`
+The edges of the graph are: `[5,11] [11,2] [7,11] [7,8] [8,9] [3,8] [3,10] [11,9] [11,10]`
 
 The graph has many valid topological sorts, including:
 
@@ -16,3 +16,11 @@ The graph has many valid topological sorts, including:
 - 7, 5, 11, 3, 10, 8, 9, 2 (largest-numbered available vertex first)
 - 5, 7, 11, 2, 3, 8, 9, 10 (attempting top-to-bottom, left-to-right)
 - 3, 7, 8, 5, 11, 10, 2, 9 (arbitrary)
+
+In a graph, a **Source** is a node which has no incoming edges and only outgoing edges. A **Sink** is a node which has only incoming edges and no outgoing edges. So, in the graph shown above, nodes 5, 7, and 3 are Source nodes. And nodes 2, 9, and 10 are Sink node. 
+
+Now, it's easy to see that a topological ordering begins from one of the Sources and ends at one of the Sinks.
+
+>Note: A graph has a cycle if some vertices have cyclical dependencies. Which means it's impossible to find a linear ordering of vertices. So a topological sort is only possible in a Directed Acyclic Graph (**DAG**)
+
+
