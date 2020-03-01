@@ -44,11 +44,11 @@ Output:
 
 From the given words we can conclude the following:
  
-1. From "def" and "eg", we can conclude that 'd' comes before 'e'.
-2. From "eg" and "fee", we can conclude that 'e' comes before 'f'.
-3. From "fee" and "fg", we can conclude that 'e' comes before 'g'
-4. From "fg" and "gdd", we can conclude that 'f' comes before 'g'
-5. From "gdd" and "geg", we can conclude that 'd' comes before 'e'
+- From "def" and "eg", we can conclude that 'd' comes before 'e'.
+- From "eg" and "fee", we can conclude that 'e' comes before 'f'.
+- From "fee" and "fg", we can conclude that 'e' comes before 'g'
+- From "fg" and "gdd", we can conclude that 'f' comes before 'g'
+- From "gdd" and "geg", we can conclude that 'd' comes before 'e'
  
 From the above five points, we can deduce that the character order is: "defg"
 
@@ -58,7 +58,7 @@ Given a sequence of words written in the alien language, and the order of the al
 ## Example 1: 
 
 Input: 
->["hello","dear"] ["hlabcdefgijkmnopqrstuvwxyz"]
+>["hello","dear"], ["hlabcdefgijkmnopqrstuvwxyz"]
 
 Output:
 >true
@@ -68,7 +68,7 @@ As **h** comes before **d**, the given sequence of words is in the correct order
 ## Example 2: 
 
 Input: 
->["colony", "cold"] ["hlabcdefgijkmnopqrstuvwxyz"]
+>["colony","cold"], ["hlabcdefgijkmnopqrstuvwxyz"]
 
 Output:
 >false
@@ -78,7 +78,7 @@ As **d** comes before **o**, the given sequence of words is not sorted.
 ## Example 3: 
 
 Input: 
->["hello", "hell"] ["hlabcdefgijkmnopqrstuvwxyz"]
+>["hello", "hell"], ["hlabcdefgijkmnopqrstuvwxyz"]
 
 Output:
 >false
