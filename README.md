@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # ProgrammingPuzzles
-Programming puzzles and interview problems.
+Programming puzzles and interview coding problems.
 
 # License
 
