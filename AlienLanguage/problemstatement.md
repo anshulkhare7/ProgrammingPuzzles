@@ -1,4 +1,4 @@
-# Alien Language (Version 1)
+# Alien Language
 
 There's an alien language which contains the same characters as the English language, i.e. from **a** to **z**. However, we don’t know the ordering of the characters in this language. You're given a dictionary from this language i.e, a sequence of words which are lexicographically sorted. 
 
@@ -52,36 +52,4 @@ From the given words we can conclude the following:
  
 From the above five points, we can deduce that the character order is: "defg"
 
-# Alien Language (Version 2)
-Given a sequence of words written in the alien language, and the order of the alphabet, return true if the given words are in the correct lexicographical order in this alien language.
-
-## Example 1: 
-
-Input: 
->["hello","dear"], ["hlabcdefgijkmnopqrstuvwxyz"]
-
-Output:
->true
-
-As **h** comes before **d**, the given sequence of words is in the correct order. 
-
-## Example 2: 
-
-Input: 
->["colony","cold"], ["hlabcdefgijkmnopqrstuvwxyz"]
-
-Output:
->false
-
-As **d** comes before **o**, the given sequence of words is not sorted.
-
-## Example 3: 
-
-Input: 
->["hello", "hell"], ["hlabcdefgijkmnopqrstuvwxyz"]
-
-Output:
->false
-
-The first three characters "hell" match, and the second string is shorter (in size.) According to lexicographical rules "hello" > "hell", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character.
 
