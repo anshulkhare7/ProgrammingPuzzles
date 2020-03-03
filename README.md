@@ -3,7 +3,7 @@
 # ProgrammingPuzzles
 Programming puzzles and interview coding problems.
 
-- Alien Language
+- [Alien Language](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/AlienLanguage)
 
 # License
 
