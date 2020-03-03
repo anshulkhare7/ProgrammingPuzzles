@@ -14,8 +14,7 @@ class AlienLanguageTest {
         
         alt.test01_AlienLanguage("pqr", new String[] {"pq", "pr", "qr", "rqp"});
         alt.test02_AlienLanguage("xyz", new String[] {"xyz", "yyy", "yyz"});
-        alt.test03_AlienLanguage("defg", new String[] {"def", "eg", "fee", "fg", "gdd", "geg"});        
-
+        alt.test03_AlienLanguage("defg", new String[] {"def", "eg", "fee", "fg", "gdd", "geg"});                
     }
 
     void test01_AlienLanguage(String expected, String[] input){
