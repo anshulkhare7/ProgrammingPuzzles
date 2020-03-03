@@ -37,12 +37,11 @@ Now, it's easy to see that a topological ordering begins from one of the Sources
 
 4. All vertices with ‘0’ in-degrees will be our sources and we will store them in a Queue.
 
-5. Pop from this source Queue, and do the following:
+5. Pop from this source Queue, and do the following until the source Queue is empty:
     - Add it to the sorted list.
     - Get all of its children from the graph.
     - Decrement the in-degree of each child by 1.
     - If a child’s in-degree becomes ‘0’, add it to the sources Queue.
-    - Repeat step 1, until the source Queue is empty.
 
 ## Time Complexity
 
