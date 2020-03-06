@@ -45,4 +45,15 @@ Now, it's easy to see that a topological ordering begins from one of the Sources
 
 ## Time Complexity
 
+> N = total number of characters in the alien language
+> M = size of the input array of words
+> C = average number of characters in each word which is a constant
+
+1.  The time complexity of the step where we initialize the Ajacency List and the inDegree map will be O(N*M).
+2.  The time complexity of the the step where we're building the graph and populating the in-degree map will be O(N*C).
+3.  The step where we're building the sources queue, the time complexity will be O(N).
+4.  In the last step, where we're iterating over the Source Queue, each edge of the graph will be accessed once. The edges are the list of pairs **[u,v]** which is the order of M. So the time complexity of this step would be O(M).
+
+Based on above 4 points, the time complexity of this approach would be O(M*N)
+
 ## Space Complexity
