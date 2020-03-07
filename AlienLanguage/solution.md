@@ -57,3 +57,5 @@ Now, it's easy to see that a topological ordering begins from one of the Sources
 Based on above 4 points, the time complexity of this approach would be O(M*N)
 
 ## Space Complexity
+
+The Adjacency List, the Source Queue, and the inDegree Map are all proportional to the number of characters in the Alient language i.e., N. So the space complexity would be O(N).
