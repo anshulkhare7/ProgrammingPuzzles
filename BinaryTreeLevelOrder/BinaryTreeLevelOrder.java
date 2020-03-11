@@ -2,8 +2,8 @@ import java.util.*;
 
 class BinaryTreeLevelOrder {
 
-    public List<Integer> getLevelAverages(TreeNode root){
-        return new ArrayList<Integer>();
+    public List<Double> getLevelAverages(TreeNode root){
+        return new ArrayList<Double>();
     }
 
     public List<Integer> getLevelMax(TreeNode root){
