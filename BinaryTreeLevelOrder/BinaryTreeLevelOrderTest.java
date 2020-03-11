@@ -79,7 +79,7 @@ class BinaryTreeLevelOrderTest {
         expected.add(new ArrayList<Integer>(Arrays.asList(2,8)));
         expected.add(new ArrayList<Integer>(Arrays.asList(10,11,6)));
 
-        List<List<Integer>> result =  this.binaryTreeLevelOrder.getLevel(root);        
+        List<List<Integer>> result =  this.binaryTreeLevelOrder.getLevelZigzag(root);        
 
         if(result.equals(expected))
             System.out.println("Test Case testGetLevelZigzag Passed.");
