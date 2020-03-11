@@ -3,26 +3,181 @@ import java.util.*;
 class BinaryTreeLevelOrder {
 
     public List<Double> getLevelAverages(TreeNode root){
-        return new ArrayList<Double>();
+        List<Double> result = new ArrayList<>();
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean reverseFlag = true;
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();            
+            double sum = 0.0;
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+
+                sum = sum + (double)thisNode.val;
+                                
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);                
+                
+            }            
+            double average = sum / levelSize;
+            result.add(average);            
+        }
+
+        return result;
     }
 
     public List<Integer> getLevelMax(TreeNode root){
-        return new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<>();
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean reverseFlag = true;
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();            
+            int max = 0;
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+
+                max = Math.max(max, thisNode.val);
+                                
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);                
+                
+            }            
+            result.add(max);            
+        }
+
+        return result;
     }
 
     public List<List<Integer>> getLevel(TreeNode root){
-        return new ArrayList<List<Integer>>();
+
+        List<List<Integer>> result = new ArrayList<>();
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();            
+            List<Integer> thisLevel = new ArrayList<>(levelSize);
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+                thisLevel.add(thisNode.val);
+
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);
+
+            }
+            result.add(thisLevel);
+        }
+
+        return result;
     }
 
     public List<List<Integer>> getLevelReverse(TreeNode root){
-        return new ArrayList<List<Integer>>();
-    }
+
+        List<List<Integer>> result = new ArrayList<>();
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();            
+            List<Integer> thisLevel = new ArrayList<>(levelSize);
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+                thisLevel.add(thisNode.val);
+
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+
+            }
+            result.add(thisLevel);
+        }
+
+        return result;
+    }        
 
     public List<List<Integer>> getLevelZigzag(TreeNode root){
-        return new ArrayList<List<Integer>>();
-    }
+
+        List<List<Integer>> result = new ArrayList<>();
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean reverseFlag = true;
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();            
+            List<Integer> thisLevel = new ArrayList<>(levelSize);
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+
+                if(reverseFlag)
+                    thisLevel.add(thisNode.val);
+                else
+                    thisLevel.add(0,thisNode.val);
+                    
+                                
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);                
+                
+            }            
+            result.add(thisLevel);
+            reverseFlag = !reverseFlag;
+        }
+
+        return result;
+    }          
 
     public Integer getMinimumDepth(TreeNode root){
-        return new Integer(0);
+        Integer result = 0;
+        if(root==null)
+            return result;
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean reverseFlag = true;
+        while(!queue.isEmpty()){
+            result++;
+            int levelSize = queue.size();                        
+            for(int i=0; i <levelSize; i++){
+                
+                TreeNode thisNode = queue.poll();
+                                
+                if(thisNode.left==null && thisNode.right==null)
+                    return result;
+                    
+                if(thisNode.left!=null)
+                    queue.offer(thisNode.left);
+                if(thisNode.right!=null)
+                    queue.offer(thisNode.right);
+                
+            }                        
+        }
+
+        return result;
     }
 }
