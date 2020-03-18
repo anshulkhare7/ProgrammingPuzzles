@@ -10,6 +10,13 @@ We will use three temporary pointers — current, next, and previous.
     - C = N
 3. Return *P*
 
+For the version 2 of this problem, where we need to reverse a sublist *(from position a to b)*, here are the steps —
+
+1. First, skip *a-1* nodes to reach node *a*.
+2. Remember the *a-1* node.
+3. Reverse the nodes from *a* to *b* 
+4. Connect *a-1* node and *b+1* node to the reversed list
+
 ## Time Complexity
 
 We'll have to step through every node of the list once, so the time complexity is O(N).
