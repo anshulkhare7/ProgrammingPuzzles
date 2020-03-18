@@ -7,29 +7,7 @@ class LinkedListReversalTest{
         LinkedListReversalTest linkedListReversalTest = new LinkedListReversalTest();        
         linkedListReversalTest.testReverseList();
         linkedListReversalTest.testReverseSublistList();
-    }
-
-    boolean isListSame(ListNode l1, ListNode l2){
-        if(l1==null || l2==null){
-            return false;
-        }
-
-        while(l1!=null && l2!=null){
-            if(l1.val != l2.val)
-                return false;
-            
-            if(l1==null)
-                return false;
-            
-            if(l2==null)
-                return false;
-
-            l1 = l1.next;
-            l2 = l2.next;
-        }
-
-        return true;
-    }
+    }    
 
     void testReverseSublistList(){
         LinkedListReversal linkedListReversal = new LinkedListReversal();
