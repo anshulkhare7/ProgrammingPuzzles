@@ -180,4 +180,24 @@ class BinaryTreeLevelOrder {
 
         return result;
     }
+
+    public TreeNode getLevelOrderSuccessor(TreeNode root, int node){
+        Integer result = 0;
+        if(root==null)
+            return new TreeNode(0);
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            TreeNode currentNode = queue.poll();
+            if(currentNode.left!=null)
+                queue.offer(currentNode.left);
+            if(currentNode.right!=null)
+                queue.offer(currentNode.right);
+            
+            if(currentNode.val==node)
+                break;
+        }    
+        return queue.peek();
+    }
 }

@@ -18,7 +18,7 @@ class BinaryTreeLevelOrderTest {
         btot.testGetLevelMax();
         btot.testGetLevelAverages();                        
         btot.testGetMinimumDepth();
-        
+        btot.testGetLevelOrderSuccessor();
     }
 
     void testGetLevel(){
@@ -150,4 +150,24 @@ class BinaryTreeLevelOrderTest {
                         
     }
 
+    void testGetLevelOrderSuccessor(){
+        TreeNode root = new TreeNode(13);
+        
+        root.left = new TreeNode(8);
+        root.right = new TreeNode(2);
+        root.left.left = new TreeNode(10);
+        root.right.left = new TreeNode(11);
+        root.right.right = new TreeNode(6);
+        root.right.left.left = new TreeNode(21);
+        root.right.left.right = new TreeNode(18);        
+
+        int expected =  21;
+        TreeNode result =  this.binaryTreeLevelOrder.getLevelOrderSuccessor(root, 6);
+
+        if(result.val==expected)
+            System.out.println("Test Case testGetLevelOrderSuccessor Passed.");
+        else
+            System.out.println("Test Case testGetLevelOrderSuccessor Failed. Expected: "+expected+" Actual: "+result);  
+
+    }
 }
