@@ -17,6 +17,8 @@ For the version 2 of this problem, where we need to reverse a sublist *(from pos
 3. Reverse the nodes from *a* to *b* 
 4. Connect *a-1* node and *b+1* node to the reversed list
 
+For version 3 of this problem, we need to reverse a sublist starting from *(position 1 to m)*, and then repeat it from m+1 to 2m and so on. 
+
 ## Time Complexity
 
 We'll have to step through every node of the list once, so the time complexity is O(N).

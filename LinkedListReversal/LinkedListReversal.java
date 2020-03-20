@@ -33,6 +33,10 @@ class LinkedListReversal{
         return previous;
     }
 
+    ListNode reverseAllSublistLists(ListNode head, int size){
+        return null;
+    }
+
     ListNode reverseSublistList(ListNode head, int start, int end){
         if(head==null)
             return null;            

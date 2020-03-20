@@ -7,7 +7,46 @@ class LinkedListReversalTest{
         LinkedListReversalTest linkedListReversalTest = new LinkedListReversalTest();        
         linkedListReversalTest.testReverseList();
         linkedListReversalTest.testReverseSublistList();
+        linkedListReversalTest.testReverseAllSublistLists();
     }    
+
+    void testReverseAllSublistLists(){
+        LinkedListReversal linkedListReversal = new LinkedListReversal();
+
+        List<Integer> expectedList = new ArrayList<>();
+
+        ListNode head = new ListNode(1,null);
+        head.next = new ListNode(2, null);
+        head.next.next = new ListNode(3, null);
+        head.next.next.next = new ListNode(4, null);
+        head.next.next.next.next = new ListNode(5, null);
+        head.next.next.next.next.next = new ListNode(6, null);
+        head.next.next.next.next.next.next = new ListNode(7, null);
+        head.next.next.next.next.next.next.next = new ListNode(8, null);
+
+        expectedList.add(3);
+        expectedList.add(2);
+        expectedList.add(1);
+        expectedList.add(6);
+        expectedList.add(5);
+        expectedList.add(4);
+        expectedList.add(8);
+        expectedList.add(7);
+        
+        List<Integer> actualList = new ArrayList<>();
+        ListNode actual = linkedListReversal.reverseAllSublistLists(head, 3);        
+        while(actual!=null){
+            actualList.add(actual.val);
+            actual = actual.next;
+        }
+
+        if(actualList.equals(expectedList)){
+            System.out.println("Test Case testReverseAllSublistLists Passed.");        
+        }else{
+            System.out.println("Test Case testReverseAllSublistLists FAILED. Expected: "+expectedList.toString()+" Actual: "+actualList.toString()); 
+        }
+
+    }
 
     void testReverseSublistList(){
         LinkedListReversal linkedListReversal = new LinkedListReversal();
