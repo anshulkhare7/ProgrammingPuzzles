@@ -4,9 +4,10 @@ Typically, a sorting algorithm has a time complexity of **O(NlogN)** Since we kn
 
 We can try placing each number at its correct place, i.e., placing ‘1’ at index ‘0’, placing ‘2’ at index ‘1’, and so on.
 
+
 ## Time Complexity
 
-Since we have to traverse the array only once, the time complexity would be **O(N)**
+In the worst case, starting from first index, we will swap n-1 times during our first iteration. After that, all the number will already be at their place so there won't be any swapping for subsequent indexes. So the time complexity would be **O(n-1) + O(n)** i.e., **O(N)**
 
 ## Space Complexity
 
