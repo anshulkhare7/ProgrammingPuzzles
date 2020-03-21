@@ -34,7 +34,40 @@ class LinkedListReversal{
     }
 
     ListNode reverseAllSublistLists(ListNode head, int size){
-        return null;
+        if(head==null || size < 1)
+            return null;
+
+        int counter = 1;        
+
+        ListNode current = head;
+        ListNode previous = null;                  
+         
+        while(current!=null){                   
+            ListNode lastNodeOfFirstPart = previous;           
+            ListNode lastNodeOfSublist = current;
+            ListNode next = null;      
+
+            counter = 1;        
+            while(counter<=size && current!=null){
+                next = current.next;
+                current.next = previous;
+                previous = current;
+                current = next;
+                counter++;                
+            }
+
+            if(lastNodeOfFirstPart!=null)
+                lastNodeOfFirstPart.next = previous;
+            else
+                head = previous;
+
+            lastNodeOfSublist.next = current;
+            
+            previous = lastNodeOfSublist;
+         
+        }
+
+        return head;
     }
 
     ListNode reverseSublistList(ListNode head, int start, int end){
