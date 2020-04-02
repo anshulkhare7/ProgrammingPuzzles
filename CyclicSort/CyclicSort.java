@@ -4,6 +4,25 @@ class CyclicSort{
         
     }
 
+    int findMissingNumber(int[] input){
+        if(input.length < 1)
+            return -1;
+        
+        for(int i=0; i < input.length ; i++){
+            while(i != input[i] && input[i] < input.length){
+                swap(input, i, input[i]);
+            }
+        }
+
+        for(int i=0; i < input.length; i++){
+            if(input[i]!=i)
+                return i;
+        }
+
+        return -1;
+
+    }
+
     int[] sortUniqueNumbers(int[] input){
         if(input.length < 1)
             return new int[]{};
