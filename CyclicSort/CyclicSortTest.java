@@ -5,6 +5,21 @@ class CyclicSortTest{
     public static void main(String[] args) {
         CyclicSortTest cst = new CyclicSortTest();
         cst.testSortUniqueNumbers();
+        cst.testFindMissingNumber();
+    }
+
+    void testFindMissingNumber(){
+        int[] input = new int[]{9,8,7,6,1,5,2,4,0};
+        int expected = 3;
+        
+        CyclicSort cs = new CyclicSort();
+        int actual = cs.findMissingNumber(input);
+
+        if(expected==actual)
+            System.out.println("Test Case testFindMissingNumber Passed.");        
+        else
+            System.out.println("Test Case testFindMissingNumber FAILED. Expected: "+expected+" Actual: "+actual); 
+
     }
 
     void testSortUniqueNumbers(){
