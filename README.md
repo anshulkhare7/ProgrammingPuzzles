@@ -10,6 +10,9 @@
 Programming puzzles and interview coding problems.
 
 - [Alien Language](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/AlienLanguage)
+- [Binary Tree Level Order](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/BinaryTreeLevelOrder)
+- [LinkedList Traversal](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/LinkedListReversal)
+- [Cyclic Sort](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/CyclicSort)
 
 # License
 
