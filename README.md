@@ -13,6 +13,8 @@ Programming puzzles and interview coding problems.
 - [Binary Tree Level Order](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/BinaryTreeLevelOrder)
 - [LinkedList Traversal](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/LinkedListReversal)
 - [Cyclic Sort](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/CyclicSort)
+- [Response Timeout](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/ResponseTimeout)
+- [MatrixManipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/MatrixManipulation)
 
 # License
 
