@@ -16,3 +16,11 @@ A log file contains the start and end events for several webservices. Each event
 The timeout threshold for every event is 3 sec.
 
 Write code to call out the timedout services **as earliest as possible**
+
+# Solution 
+
+1. Maintain a HashMap with eventId as key and a Blocking queue.
+2. One thread will read the data from the log stream and insert/delete it from a Blocking queue. As a start event is published, it's added to the queue and inserted into the Map.
+3. Another thread dequeues from the list. On each dequeueing step —
+    - If the `now - timestamp > 3000`, call out **Timeout** and remove it from the Map.
+    — Else, sleep for `timstamp + 3000 - now`
