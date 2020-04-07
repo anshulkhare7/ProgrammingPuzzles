@@ -14,7 +14,7 @@ Programming puzzles and interview coding problems.
 - [LinkedList Traversal](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/LinkedListReversal)
 - [Cyclic Sort](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/CyclicSort)
 - [Response Timeout](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/ResponseTimeout)
-- [MatrixManipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/MatrixManipulation)
+- [Matrix Manipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/MatrixManipulation)
 
 # License
 
