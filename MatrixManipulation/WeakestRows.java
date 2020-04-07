@@ -14,7 +14,7 @@ public class WeakestRows {
                     break;
                 }
             }            
-            /*
+            /* Using inverse modulo
 		    * we can create a score to match the sort condition from description
 		    * score = soldiersCount * rows + currentRowIndex
 		    * so we can get soldiersCount by score / rows, and get rowIndex by score % rows
