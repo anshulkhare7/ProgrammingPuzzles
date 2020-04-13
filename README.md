@@ -16,9 +16,9 @@ Programming puzzles and interview coding problems.
 - [Response Timeout](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/ResponseTimeout)
 - [Matrix Manipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/MatrixManipulation)
 - [Intervals](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/Intervals)
-- [Arrays] (https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/Arrays)
+- [Arrays](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/Arrays)
 - [Bit Manipulation](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/BinaryTreeLevelOrder)
-- [Linklist Reversal](https://github.com/anshulkhare7/ProgrammingPuzzles/tree/master/LinkedListReversal)
+
 
 # License
 
