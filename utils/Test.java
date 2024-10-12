@@ -1,6 +1,6 @@
 package utils;
 
-public class EntryPoint {
+public class Test {
     public static void main(String[] args) {
         Card[] deck = Deck.shuffle(Deck.getNew());
 
