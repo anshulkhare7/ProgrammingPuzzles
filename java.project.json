@@ -1,0 +1,14 @@
+{
+  "sourcePaths": ["src"],
+  "dependencies": [
+    {
+      "name": "JUnit Jupiter API",
+      "path": "https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar"
+    },
+    {
+      "name": "JUnit Platform Console Standalone",
+      "path": "https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.2/junit-platform-console-standalone-1.8.2.jar"
+    }
+  ]
+}
+  
